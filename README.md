@@ -13,4 +13,7 @@
     - **VSCodeSetup-x64-1.61.0.exe**
     - Install Visual Studio Code
 	 
-	
+- Learn C++ ()
+- learn C# (https://dotnet.microsoft.com/learn/csharp)	
+- Learn python ()
+
