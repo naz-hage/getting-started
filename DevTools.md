@@ -6,8 +6,8 @@ The [Windows dev environment](https://learn.microsoft.com/en-us/windows/dev-envi
 | Tool Name | Link | Version | Last Checked on |
 | --- | --- | --- | --- |
 | Windows Terminal | [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) | 1.11.2382.0 | Oct 1, 2023 |
-| Visual Studio 2022 Community Edition | [Visual Studio 2022 Community Edition – Download Latest Free Version](https://visualstudio.microsoft.com/vs/community/) | 17.7.4 | Oct 1, 2023 |
-| Visual Studio Code | [Download Visual Studio Code - Mac, Linux, Windows](https://code.visualstudio.com/download) | 1.82.2 | Oct 1, 2023 |
+| Visual Studio 2022 Community Edition | [Visual Studio 2022 Community Edition – Download Latest Free Version](https://visualstudio.microsoft.com/vs/community/) | 17.8.3 | 08-jan-24 |
+| Visual Studio Code | [Download Visual Studio Code - Mac, Linux, Windows](https://code.visualstudio.com/download) | 1.85.1 | 08-jan-24 |
 | Git | [Git](https://git-scm.com/downloads) | 2.42.0 | Oct 1, 2023 |
 | Node.js | [Node.js](https://nodejs.org/en/download/) | 18.17.0 | Oct 1, 2023 |
 | Postman | [Download Postman | Get Started for Free](https://www.postman.com/downloads/) | v10.18.7 | Oct 1, 2023 |
