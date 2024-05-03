@@ -1,19 +1,46 @@
 # Getting Started
-- Log in to GitHub and create an account
-- Download Windows Terminal from the Microsoft Store
-- Start Terminal as administrator as shown below
-    - ![picture alt](https://github.com/naz-hage/GettingStarted/blob/main/images/TerminalAsAdmin.png).
-- Download Git for Windows from Git (https://git-scm.com/downloads).
-- Download Visual Studio Code from (https://code.visualstudio.com/Download).  Select Windows, System Installer 64-bit.
-- From Terminal Change directory to Downloads
-    - **cd %USERPROFILE%\Downloads**
-    - Install Git for Windows As of October 2021 version is 2.23
-    - **Git-2.33.0-64-bit.exe**
-    - Install Git for Windows. As of October 2021 version is 1.61
-    - **VSCodeSetup-x64-1.61.0.exe**
-    - Install Visual Studio Code
-	 
-- Learn C++ ()
-- learn C# (https://dotnet.microsoft.com/learn/csharp)	
-- Learn python ()
+- This repo is a template for creating a new .NET Core Desktop project with a GitHub Actions pipeline using `NTools`.
 
+- List steps to create a new project using this template
+  - issue [#7](https://github.com/naz-hage/getting-started/issues/7)
+
+
+- Ntools documentation can be found [here](https://naz-hage.github.io/ntools/)
+- Steps to build, test and run the project are given below:
+  - Open a PowerShell terminal in admin mode
+  - Run 
+    ```shell
+    cd c:\source
+    git clone https://github.com/naz-hage/getting-started
+    cd getting-started
+    cd DevSetup
+    .\DevSetup.ps1
+    cd ..
+    ```
+  - To build the project, open a PowerShell for VS 2022:
+  - To build the project
+    ```shell
+    cd c:\source\getting-started
+    nb solution
+    ```
+  - To test the project
+    ```shell
+    cd c:\source\getting-started
+    nb test
+    ```
+  - To build a staging environment
+    ```shell
+    cd c:\source\getting-started
+    nb staging
+    ```
+  
+  - To build a production environment
+    ```shell
+    cd c:\source\getting-started
+    nb production
+    ```
+  - To deploy a production environment
+    ```shell
+    cd c:\source\getting-started
+    nb deploy
+    ```
