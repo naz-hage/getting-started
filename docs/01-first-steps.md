@@ -19,9 +19,3 @@ dotnet new console --name Display
 dotnet new classlib --name DisplayLib
 ```
 3. Follow the [instructions](https://learn.microsoft.com/en-us/visualstudio/test/getting-started-with-unit-testing?view=vs-2022&tabs=dotnet%2Cmstest#create-unit-tests) to create `DisplayTests` (unit tests for `DisplayLib`)
-
-
-   - `Display`: a console app (Created using `dotnet new console --name Display`)
-  - `DisplayLib`: a class library (Created using `dotnet new classlib --name DisplayLib`)
-  - `DisplayTests`: unit tests for `DisplayLib` (Learn how to [create unit tests](https://learn.microsoft.com/en-us/visualstudio/test/getting-started-with-unit-testing?view=vs-2022&tabs=dotnet%2Cmstest#create-unit-tests))
-
