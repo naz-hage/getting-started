@@ -1,13 +1,11 @@
 # Getting Started
 - This repo is a template for creating a new .NET Core Desktop project with a GitHub Actions pipeline using `NTools`.
 
-- It consists of:
-  - `Display`: a console app (Created using `dotnet new console --name Display`)
-  - `DisplayLib`: a class library (Created using `dotnet new classlib --name DisplayLib`)
-  - `DisplayTests`: unit tests for `DisplayLib` (Learn how to [create unit tests](https://learn.microsoft.com/en-us/visualstudio/test/getting-started-with-unit-testing?view=vs-2022&tabs=dotnet%2Cmstest#create-unit-tests))
-
-- List steps to create a new project using this template
-  - issue [#7](https://github.com/naz-hage/getting-started/issues/7)
+- Steps to create a new project using this template
+  - [Create a simple project](docs/01-first-steps.md)
+  - [Install ntools and add nbuild.targets](docs/02-nbuild.targets.md)
+  - [Add DevSetup folder which helps setup the development environment - issue #5](https://github.com/naz-hage/getting-started/issues/5)
+  - [Add GitHub workflow - issue #6](https://github.com/naz-hage/getting-started/issues/6)
 
 
 - Ntools documentation can be found [here](https://naz-hage.github.io/ntools/)
