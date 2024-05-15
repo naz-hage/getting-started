@@ -4,7 +4,7 @@
 - Steps to create a new project using this template
   - [Create a simple project](docs/01-first-steps.md)
   - [Install ntools and add nbuild.targets](docs/02-nbuild.targets.md)
-  - [Add DevSetup folder which helps setup the development environment - issue #5](https://github.com/naz-hage/getting-started/issues/5)
+  - [Add DevSetup folder to setup the development environment](docs/02-dev-setup.md)
   - [Add GitHub workflow - issue #6](https://github.com/naz-hage/getting-started/issues/6)
 
 
