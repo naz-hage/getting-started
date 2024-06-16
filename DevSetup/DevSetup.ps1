@@ -19,14 +19,14 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 # Install Ntools
 MainInstallApp -command install -json .\app-Ntools.json
 if ($LASTEXITCODE -ne 0) {
-    Write-OutputMessage $fileName "Error: Installation of app-Ntools.json failed. Exiting script."
+    Write-OutputMessage $fileName "Error: Installation of ntools (app-Ntools.json) failed. Exiting script."
     exit 1
 }
 
-# Install development tools for the MyProject project
+# Install development tools for the project
 & $global:NbExePath -c install -json .\apps.json
 if ($LASTEXITCODE -ne 0) {
-    Write-OutputMessage $fileName "Error: Installation of ntools failed. Exiting script."
+    Write-OutputMessage $fileName "Error: Installation of other tools (apps.json)  failed. Exiting script."
     exit 1
 }
 
