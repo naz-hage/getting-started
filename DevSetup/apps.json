@@ -12,7 +12,43 @@
         "InstallPath": "$(ProgramFiles)\\7-Zip",
         "UninstallCommand": "$(InstallPath)\\Uninstall.exe",
         "UninstallArgs": "/S"
-      }
+      },
+      {
+        "Name": "Powershell",
+        "Version": "7.4.2",
+        "AppFileName": "$(InstallPath)\\pwsh.exe",
+        "WebDownloadFile": "https://github.com/PowerShell/PowerShell/releases/download/v$(Version)/PowerShell-$(Version)-win-x64.msi",
+        "DownloadedFile": "PowerShell-$(Version)-win-x64.msi",
+        "InstallCommand": "msiexec.exe",
+        "InstallArgs": "/i PowerShell-$(Version)-win-x64.msi /quiet",
+        "InstallPath": "$(ProgramFiles)\\PowerShell\\7",
+        "UninstallCommand": "msiexec.exe",
+        "UninstallArgs": "/x PowerShell-$(Version)-win-x64.msi /quiet"
+      },  
+      {
+        "Name": "Git for Windows",
+        "Version": "2.44.0",
+        "AppFileName": "$(InstallPath)\\bin\\git.exe",
+        "WebDownloadFile": "https://github.com/git-for-windows/git/releases/download/v$(Version).windows.1/Git-$(Version)-64-bit.exe",
+        "DownloadedFile": "Git-$(Version)-64-bit.exe",
+        "InstallCommand": "$(DownloadedFile)",
+        "InstallArgs": "/SILENT /NORESTART /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS /SP- /LOG",
+        "InstallPath": "$(ProgramFiles)\\Git",
+        "UninstallCommand": "$(InstallPath)\\unins000.exe",
+        "UninstallArgs": "/SILENT"
+      },
+      {
+        "Name": "Visual Studio 2022",
+        "Version": "17.0.0",
+        "AppFileName": "$(InstallPath)\\Common7\\IDE\\devenv.exe",
+        "WebDownloadFile": "https://aka.ms/vs/17/release/vs_Community.exe",
+        "DownloadedFile": "vs_Community.exe",
+        "InstallCommand": "$(DownloadedFile)",
+        "InstallArgs": "--add Microsoft.VisualStudio.Workload.CoreEditor Microsoft.VisualStudio.Workload.Azure Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NativeDesktop Microsoft.VisualStudio.Workload.NetWeb Microsoft.VisualStudio.Workload.NetDesktop Microsoft.VisualStudio.Workload.Azure Microsoft.VisualStudio.Workload.Data --quiet --wait",
+        "InstallPath": "$(ProgramFiles)\\Microsoft Visual Studio\\2022\\Community",
+        "UninstallCommand": "$(ProgramFilesX86)\\Microsoft Visual Studio\\Installer\\vs_installer.exe",
+        "UninstallArgs": "uninstall --quiet --installPath $(InstallPath)"
+      }  
     ]
   }
   
