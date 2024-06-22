@@ -31,7 +31,7 @@ jobs:
         $output = "./install.psm1"
         Invoke-WebRequest -Uri $url -OutFile $output
         Import-Module ./install.psm1 -Force
-
+        
         $fileName = Split-Path -Leaf $PSCommandPath
         Write-OutputMessage $fileName "Started installation script."
         
@@ -44,7 +44,11 @@ jobs:
         }
         
         # Install Ntools
-        ./install.psm1
+        MainInstallApp -command install -json .\app-Ntools.json
+        if ($LASTEXITCODE -ne 0) {
+            Write-OutputMessage $fileName "Error: Installation of ntools (app-Ntools.json) failed. Exiting script."
+            exit 1
+        }
         
         Write-OutputMessage $fileName "Completed installation script."
         Write-OutputMessage $fileName "EmtpyLine"
@@ -63,14 +67,8 @@ jobs:
         git config --global user.name "gitHub-actions"
         git config --global user.email "actions@github.com"
 
-    - name: Build using ntools
+    - name: Build and test using ntools
       run: |
-        & "$env:ProgramFilesPath/nbuild/nb.exe" solution
-      shell: pwsh
-      working-directory: ${{ github.workspace }}
-
-    - name: Test using ntools
-      run: |
-        & "$env:ProgramFilesPath/nbuild/nb.exe" test
+        & "$env:ProgramFilesPath/nbuild/nb.exe" staging
       shell: pwsh
       working-directory: ${{ github.workspace }}
