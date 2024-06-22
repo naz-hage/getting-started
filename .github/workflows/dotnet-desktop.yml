@@ -7,11 +7,9 @@ on:
     branches: [ "*" ]
 
 jobs:
-  build:
-
+  build-test:
     name: Build and Test
     runs-on: windows-latest
-
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
