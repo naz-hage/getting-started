@@ -5,7 +5,7 @@
   - [Create a simple project](docs/01-first-steps.md)
   - [Install ntools and add nbuild.targets](docs/02-nbuild.targets.md)
   - [Add DevSetup folder to setup the development environment](docs/03-dev-setup.md)
-  - [Add GitHub workflow - issue #6](https://github.com/naz-hage/getting-started/issues/6)
+  - [Add GitHub workflow: Check this example](.github/workflows/dotnet-desktop.yml)
 
 
 - Ntools documentation can be found [here](https://naz-hage.github.io/ntools/)
