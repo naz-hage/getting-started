@@ -9,7 +9,7 @@ DevSetup Folder contains the apps.json file and the DevSetup.ps1 file. The apps.
 %MainDirectory%\MyProject
 %MainDirectory%\MyProject\DevSetup
 %MainDirectory%\MyProject\DevSetup\apps.json
-%MainDirectory%\MyProject\DevSetup\apps-Ntools.json
+%MainDirectory%\MyProject\DevSetup\app-Ntools.json
 %MainDirectory%\MyProject\DevSetup\DevSetup.ps1
 %MainDirectory%\MyProject\... other project and test files
 ```
