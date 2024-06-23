@@ -53,4 +53,11 @@
         <Message Text="==> DONE"/>
     </Target>
 
+  <!-- Example target to build and test without changing the tag -->
+    <Target Name="BUILD_TEST" DependsOnTargets="
+        CLEAN;
+        SOLUTION;
+        TEST">
+    </Target>
+
 </Project>
