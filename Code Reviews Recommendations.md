@@ -1,25 +1,26 @@
-Last Modified: 02-oct-2023
+Last Modified: 30-jun-2024
 This list updated very often.  Please check back often.
-- Write code using modern Source code managment and adhere to IT policies. i.e.GitHub Enterprise
-- Write code using modern IDE which incldes intellesense, refactor, and use static code analysis
-    For Windows clients use Visual Studio 2022
-- Use C# 9.0 or higher
-- Use C++ 20 or higher
-- Use WinRT for Windows 10 applications
-- Use .NET 7.0 or higher for cross platform applications
-- Reduce executables by moving functionality to well named classes which each class including the desired methods
-- Create common static class for validating input
-- Pay special attention to public global properties which can be controlled by outside to change direction of execution
-- Remove redunduncies in code by moving common code to a common class
-- Create well intentions class that include methods to fullfill the class intentions and nothing else
-- Shorter methods with clear method signatures - no more 2 or three arguments per method
-- Use named parameters when calling methods
-- Avoid using bool parameters in methods 
-- Each method must validate input and fail fast when incorrect arguments are passed
-- Don't catch exceptions in class methods unless they are handled
-- Add unit tests for the shorter methods
-- Rename methods to show intentions
-- When calling methods which requires boolean such as true or false, use named parameters such as SaveOption:true
-- Run static code analysis
-- For c++, use std c++ or winrt.
-- When launching executable, allow UAC to de displayed
+**Best Practices for Modern Software Development in Windows Environments**
+
+1. Ensure all code is managed using a modern Source Code Management system like GitHub Enterprise, adhering to IT policies.
+2. Utilize a modern IDE like Visual Studio 2022 for Windows clients, which supports IntelliSense, refactoring, and static code analysis.
+3. Adopt C# version 11.0 or higher for development.
+4. Use C++20 or higher for C++ projects.
+5. For Windows 11 or higher client applications, employ WinRT.
+6. Utilize .NET version 8.0 or higher for cross-platform application development.
+7. Optimize executables by structuring functionality into well-named classes, with each class containing relevant methods.
+8. Implement a common static class dedicated to input validation.
+9. Exercise caution with public global properties to prevent external manipulation of execution flow.
+10. Eliminate code redundancies by centralizing common code into a shared class.
+11. Design classes with clear intentions, including only methods that serve the class's purpose.
+12. Aim for shorter methods with clear signatures, limiting arguments to no more than two or three per method.
+13. Prefer named parameters for method calls to enhance readability.
+14. Avoid using boolean parameters in methods; consider alternative designs.
+15. Ensure each method validates its input and fails fast upon receiving incorrect arguments.
+16. Avoid catching exceptions within class methods unless they are explicitly handled.
+17. Incorporate unit tests for all methods, focusing on the newly shortened ones.
+18. Rename methods to clearly convey their purpose.
+19. When invoking methods that require boolean arguments, use named parameters for clarity, e.g., `SaveOption: true`.
+20. Regularly run static code analysis to identify and resolve potential code issues.
+21. For C++ development, stick to standard C++ or WinRT as appropriate.
+22. When launching executables, configure them to trigger the User Account Control (UAC) prompt, ensuring security best practices.
