@@ -432,3 +432,4 @@ FodyWeavers.xsd
 Nbuild.bat
 /DevSetup/install.psm1
 /DevSetup/install.log
+/.temp
